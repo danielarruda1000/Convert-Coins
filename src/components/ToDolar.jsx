@@ -19,7 +19,7 @@ export default class CardCoin extends Component{
 
 convert() {
     const dolar = 4.05;
-    let valorConvertido = (this.state.valorBrl / dolar) .toFixed(3)   
+    let valorConvertido = (this.state.valorBrl / dolar) .toFixed(2)   
     console.log(valorConvertido)
     this.setState({valorUsd: valorConvertido })    
 }
