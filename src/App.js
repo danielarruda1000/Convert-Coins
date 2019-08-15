@@ -1,11 +1,14 @@
 import React from 'react';
-import CardCoin from './components/CardCoin'
-//import './App.css';
+import ToDolar from './components/ToDolar'
+import Header from './components/Header'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <CardCoin />
+      <Header/>
+      <ToDolar/>
+      
     </div>
   );
 }

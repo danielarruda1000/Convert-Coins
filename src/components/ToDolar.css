@@ -1,8 +1,8 @@
 .cardBoard{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
     display: grid;
-    margin: 20px; 
-    width: 50%;
+    width: 350px;
     height: 100%;
     overflow: hidden;
     background-color: #fafafae3;
@@ -19,35 +19,52 @@
     margin-left: 5px;
 }
 
-.cardBoard .resultBox{
+.cardBoard .input{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
     background-color: #AEFEE1;
 }
 
-.cardBoard .resultBox input{
-    border: none;
-    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
-    font-size: 1.2em;
-    padding-left: 5px;
-    margin: 5px;
-    color: #444;
-    font-weight: 200;
-}
-.cardBoard .resultBox button{
+.cardBoard .input input{
     border: none;
     box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
     font-size: 1.2em;
     padding: 5px;
     margin: 5px;
+    color: #444;
+    font-weight: 200;
+    width: 90px;
+}
+.cardBoard .input button{
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    font-size: 0.9em;
+    padding: 5px;
+    margin: 5px;
     background-color: #fafafae3;
     font-weight: 200;
     color: #444;
+    width: 75px;
+    font-weight: bold;
 }
 
-.cardBoard .resultBox h2{
+.cardBoard .input h2{
     padding-left: 15px;
     color: #444;
     font-weight: 400;
+}
+
+.resultArea{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.cardBoard .resultArea > h2{
+    font-weight: 500;
+}
+
+@media(max-width: 468px){
+    .cardBoard .inpu{
+        grid-template-columns: 1fr;
+    }
 }

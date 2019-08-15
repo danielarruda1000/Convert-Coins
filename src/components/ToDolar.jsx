@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
-import './CardCoin.css'
+import './ToDolar.css'
+
 
 export default class CardCoin extends Component{
 
@@ -18,7 +19,7 @@ export default class CardCoin extends Component{
 
 convert() {
     const dolar = 4.05;
-    let valorConvertido = (this.state.valorBrl * dolar) .toFixed(2)   
+    let valorConvertido = (this.state.valorBrl / dolar) .toFixed(3)   
     console.log(valorConvertido)
     this.setState({valorUsd: valorConvertido })    
 }
@@ -27,13 +28,14 @@ convert() {
     return(
         <div className="cardBoard">
                 <h1>BRL to USD</h1>
-                <div className="resultBox">
+                <div className="input">
                     <h2>R$</h2>
-                    <input onChange={(event)=> this.setState({valorBrl: event.target.value})} type="text" placeholder="Digite um valor..."/>
+                    <input onChange={(event)=> this.setState({valorBrl: event.target.value})} type="text"/>
                     <button onClick={this.convert}>Convert</button>
-                    <h2>US</h2>
-                    <h2>{this.state.valorUsd}</h2>
-
+                    <div className="resultArea">
+                        <h2>US</h2>
+                        <h2>{this.state.valorUsd}</h2>
+                    </div>
             </div>
         </div>
     );

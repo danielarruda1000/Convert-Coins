@@ -1,0 +1,20 @@
+header{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    height: 100%;
+    background: #D3FEEE;
+}
+
+header > h1 {
+    font-weight: 500;
+    color: #444;
+    font-size: 2.5em;
+    padding: 0 0 5px 10px;
+}
+
+header h2{
+    font-weight: 200;
+    color: #444;
+    font-size: 1.3em;
+    padding: 0 0 5px 10px;
+}
