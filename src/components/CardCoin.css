@@ -1,0 +1,53 @@
+.cardBoard{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: grid;
+    margin: 20px; 
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #fafafae3;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    background-color: #D3FEEE;
+}
+
+.cardBoard h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #333;
+    font-size: 1.5em;
+    margin-left: 5px;
+}
+
+.cardBoard .resultBox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    background-color: #AEFEE1;
+}
+
+.cardBoard .resultBox input{
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    font-size: 1.2em;
+    padding-left: 5px;
+    margin: 5px;
+    color: #444;
+    font-weight: 200;
+}
+.cardBoard .resultBox button{
+    border: none;
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    font-size: 1.2em;
+    padding: 5px;
+    margin: 5px;
+    background-color: #fafafae3;
+    font-weight: 200;
+    color: #444;
+}
+
+.cardBoard .resultBox h2{
+    padding-left: 15px;
+    color: #444;
+    font-weight: 400;
+}
