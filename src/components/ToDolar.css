@@ -1,70 +1,53 @@
-.cardBoard{
+*{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
+}
+.cardBoard{
     display: grid;
-    width: 350px;
+    width: 325px;
     height: 100%;
     overflow: hidden;
     background-color: #fafafae3;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+    background-color: rgb(233, 247, 242);
+}
+
+.titleBar{
     background-color: #D3FEEE;
 }
 
-.cardBoard h1{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
+.titleBar .titleConvert{
+    
     color: #333;
-    font-size: 1.5em;
-    margin-left: 5px;
+    margin-left: 8px;
 }
 
-.cardBoard .input{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    background-color: #AEFEE1;
+.inputArea{
+    background-color: rgb(233, 247, 242);
 }
 
-.cardBoard .input input{
-    border: none;
-    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
+
+input{
+    border:none;
+    background-color: rgb(233, 247, 242);
+    border-radius: 5px;
     font-size: 1.2em;
-    padding: 5px;
-    margin: 5px;
-    color: #444;
-    font-weight: 200;
-    width: 90px;
+    color: #333;
+    font-weight: 350;
+    
 }
-.cardBoard .input button{
-    border: none;
-    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
-    font-size: 0.9em;
-    padding: 5px;
-    margin: 5px;
-    background-color: #fafafae3;
-    font-weight: 200;
-    color: #444;
-    width: 75px;
+
+button{
+    cursor: pointer;
+    border:none;
+    color: #333;
     font-weight: bold;
 }
 
-.cardBoard .input h2{
-    padding-left: 15px;
-    color: #444;
-    font-weight: 400;
+button:hover{
+    box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
 }
 
-.resultArea{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.cardBoard .resultArea > h2{
-    font-weight: 500;
-}
-
-@media(max-width: 468px){
-    .cardBoard .inpu{
-        grid-template-columns: 1fr;
-    }
+input:hover{
+    background-color: #fafafae3;
 }
