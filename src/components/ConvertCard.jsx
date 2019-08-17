@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import './ToDolar.css'
+import './ConvertCard.css'
 
 
 export default class CardCoin extends Component{
@@ -18,7 +18,7 @@ export default class CardCoin extends Component{
 
 
 convert() {
-    const dolar = 4.00;
+    const dolar = this.props.toCoinValue;
     let valorConvertido = (this.state.valorBrl / dolar) .toFixed(2)   
     console.log(valorConvertido)
     this.setState({valorUsd: valorConvertido })    
@@ -29,10 +29,10 @@ convert() {
         <div className="cardBoard container-fluid mt-4">
             <div className="row  titleBar">
                 <div className="row">
-                    <h1 className="col-12 titleConvert">BRL to USD</h1>
+                    <h1 className="col-12 titleConvert">{this.props.coin} to {this.props.toCoin}</h1>
                 </div>
                 <div className="row mt-2 inputArea">
-                    <h2 className="col-2 ml-2 mr-2">BRL</h2>
+                    <h2 className="col-2 ml-2 mr-2">{this.props.coin}</h2>
                     <input className=" ml-2 col-4" type="text"
                         placeholder="0,00" onChange={(e)=> this.setState({valorBrl: e.target.value})}/>
                     <button className="ml-2 col-3" onClick={this.convert}>Convert</button>

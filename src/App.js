@@ -1,5 +1,5 @@
 import React from 'react';
-import ToDolar from './components/ToDolar'
+import ConvertCard from './components/ConvertCard'
 import Header from './components/Header'
 import './App.css'
 
@@ -7,7 +7,12 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      <ToDolar/>
+      <div className="d-grid cointainer-fluid">
+        <div className="row">
+        < ConvertCard coin={"BRL"} toCoin={"USD"} toCoinValue={4.0}/>
+          <ConvertCard coin={"USD"} toCoin={"BRL"} toCoinValue={0.25}/>
+        </div>
+      </div>
     </div>
   );
 }

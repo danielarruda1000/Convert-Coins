@@ -6,19 +6,18 @@
     width: 325px;
     height: 100%;
     overflow: hidden;
-    background-color: #fafafae3;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0,0, 0.2);
     background-color: rgb(233, 247, 242);
 }
 
 .titleBar{
-    background-color: #D3FEEE;
+    background-image: linear-gradient(to right, #43c6ac, #2a2768 );
 }
 
 .titleBar .titleConvert{
     
-    color: #333;
+    color: whitesmoke;
     margin-left: 8px;
 }
 
@@ -26,6 +25,9 @@
     background-color: rgb(233, 247, 242);
 }
 
+.resultArea > h2{
+    color: whitesmoke;
+}
 
 input{
     border:none;
