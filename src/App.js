@@ -10,7 +10,7 @@ function App() {
       <div className="d-grid cointainer-fluid">
         <div className="row">
         < ConvertCard coin={"BRL"} toCoin={"USD"} toCoinValue={4.0}/>
-          <ConvertCard coin={"USD"} toCoin={"BRL"} toCoinValue={0.25}/>
+          <ConvertCard coin={"BRL"} toCoin={"EUR"} toCoinValue={4.43}/>
         </div>
       </div>
     </div>
